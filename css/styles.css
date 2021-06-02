@@ -1,0 +1,26 @@
+/*Reglas Generales*/
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Raleway:ital,wght@0,400;0,900;1,200;1,600&family=Sansita+Swashed:wght@300;900&display=swap');
+
+/* Todos los elementos */
+*{
+    box-sizing: ;
+
+    /* 
+        CONTENT-BOX
+            width + padding + border = final-width
+            300px   50px      2px    = 404px
+        BORDER-BOX
+            width = final-width
+            300px = 300px
+            width - padding - border = content-width
+            300px   50px      2px    = 196px 
+    */
+    font-family: Raleway, Abel, sans-serif;
+}
+
+/* sans-serif por defecto */
+html {
+    scroll-behavior: smooth;
+   
+}
