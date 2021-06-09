@@ -11,7 +11,7 @@
 <body><!-- CUERPO: Parte VISIBLE -->   
     <!-- Estructura basica con EMMET
     (header#header>.header)+(main>article*3>section*3)+footer#footer -->
-    <header id="header">
+    <header id="header"><!-- Cabecera / Intoduccion -->   
         <div class="header">
             <h1>Maquetación Web</h1>
             <p>&lt;HTML&GT; &amp; {CSS}</p> 
@@ -30,16 +30,163 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <article>
-            <section></section>
-            <section></section>
+    <main><!-- Contenido Principal / Nudo -->  
+        <article><!-- Contenido Independiente / Articulo -->  
+            <header class="header">
+                <h1>Clase 1: Introduccion Maquetacion</h1>
+            </header>
+            <section><!-- Contenido Contextualizado / Seccion -->
+                <header >
+                    <h1>Tema 1: Elementos Semanticos</h1>
+                </header>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eos ab, earum iusto suscipit voluptas asperiores quod incidunt debitis fuga quidem quisquam autem distinctio eaque harum tempora molestias hic a?
+                </p>
+                <ul>
+                    <h2>Etiquetas</h2>
+                    <li>&lt;header></li>
+                    <li>&lt;nav></li>
+                    <li>&lt;main>
+                        <ul>
+                            <li>&lt;article></li>
+                            <li>&lt;section></li>
+                            <li>&lt;aside></li>
+                        </ul>
+                    </li>
+                    <li>&lt;footer></li>
+                </ul>
+            </section>  
+            <section>
+                <header>
+                    <h1>Tema 2: Jerarquia de Selectores</h1>
+                </header>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, ut laudantium. Quia incidunt beatae delectus, ipsum adipisci qui asperiores veritatis in nemo odio perferendis excepturi eum magnam, quasi, error provident.
+                </p>
+                <h2>Selectores</h2>                
+                <li>
+                    <strong>tag selector</strong>
+                    <ul>
+                        <li>header{...}</li>
+                        <li>header h1{...}</li>
+                    </ul>                        
+                </li>
+                <li>
+                    <strong>class selector</strong>
+                    <ul>
+                        <li><span>.header</span>{...}</li>
+                        <li><span>.header</span>h1{...}</li>
+                    </ul>                        
+                </li>
+                <li>
+                    <strong>id selector</strong>
+                    <ul>
+                        <li><span>#header</span>{...}</li>
+                        <li><span>#header</span>h1{...}</li>
+                    </ul>                        
+                </li>                
+            </section>
             <section></section>
         </article>
         <article>
-            <section></section>
-            <section></section>
-            <section></section>
+            <header class="header">
+            <h1>Introduccion a Flexbox</h1>     
+            </header>
+            <section>
+                <header>
+                    <h1>Tema 1: Distribucion (Justify-Content)</h1>
+                </header>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur placeat cum, labore id esse vel! Minima, quia obcaecati nemo nobis, laborum, voluptate cupiditate magnam libero ullam at totam? Aut itaque id nobis natus facere earum numquam nesciunt doloribus eaque. Laudantium velit sunt quaerat quasi quod qui. Alias voluptatum exercitationem consequuntur atque quis nihil ut aperiam laboriosam necessitatibus, facilis dolores veniam eaque tempora fuga rerum harum suscipit distinctio porro? Magnam totam odit porro deleniti eos voluptatem! Ipsam vero a culpa neque autem, doloribus sunt nemo. Accusamus itaque dignissimos quae at quia saepe voluptatem, quis aliquam modi. Omnis nostrum repellendus assumenda accusantium.</p>
+                <div class="flex">
+                    <div> 1 </div>
+                    <div> 2 </div>
+                    <div> 3 </div>
+                    <div> 4 </div>
+                    <div> 5 </div>
+                    <div> 6 </div>
+                    <div> 7 </div>
+                </div>
+                <ul>
+                    <li>
+                        <strong>flex-start:</strong> distribuye los elementos al comienzo de la etiqueta (izquierda)
+                    </li>
+                    <li>
+                        <strong>flex-end:</strong> distribuye los elementos al final de la etiqueta (derecha)
+                    </li>
+                    <li>
+                        <strong>flex-center:</strong> distribuye los elementos hacia el centro de la etiqueta (horizontal)
+                    </li>
+                    <li>
+                        <strong>space-around:</strong> separa los elementos sumando las distancias de los margenes
+                    </li>
+                    <li>
+                        <strong>space-between:</strong> separa los elementos de extremo a extremo 
+                    </li>
+                    <li>
+                        <strong>space-evenly:</strong> distribuye los elementos equitativamente dentro de la etiqueta
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <header>
+                    <h1>Tema 2: Organizacion (Aling-Item)</h1>
+                </header>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur placeat cum, labore id esse vel! Minima, quia obcaecati nemo nobis, laborum, voluptate cupiditate magnam libero ullam at totam? Aut itaque id nobis natus facere earum numquam nesciunt doloribus eaque. Laudantium velit sunt quaerat quasi quod qui. Alias voluptatum exercitationem consequuntur atque quis nihil ut aperiam laboriosam necessitatibus, facilis dolores veniam eaque tempora fuga rerum harum suscipit distinctio porro? Magnam totam odit porro deleniti eos voluptatem! Ipsam vero a culpa neque autem, doloribus sunt nemo. Accusamus itaque dignissimos quae at quia saepe voluptatem, quis aliquam modi. Omnis nostrum repellendus assumenda accusantium.</p>
+                <div class="flex aling">
+                    <div> 1 </div>
+                    <div> 2 </div>
+                    <div class="self"> 3 </div>
+                    <div> 4 </div>
+                    <div> 5 </div>
+                    <div> 6 </div>
+                    <div> 7 </div>
+                </div>
+                <ul>
+                    <li>
+                        <strong>flex-start:</strong> organiza los elementos al comienzo de la etiqueta (arriba)
+                    </li>
+                    <li>
+                        <strong>flex-end:</strong> organiza los elementos al final de la etiqueta (abajo)
+                    </li>
+                    <li>
+                        <strong>flex-center:</strong> organiza los elementos hacia el centro de la etiqueta (vertical)
+                    </li>
+                    <li>
+                        <strong>baseline:</strong> separa los elementos en base al tamaño de la tipografia
+                    </li>
+                   
+                </ul>
+            </section>
+            <section>
+                <header>
+                    <h1>Tema 3: Direccion (Flex-Direction)</h1>
+                </header>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur placeat cum, labore id esse vel! Minima, quia obcaecati nemo nobis, laborum, voluptate cupiditate magnam libero ullam at totam? Aut itaque id nobis natus facere earum numquam nesciunt doloribus eaque. Laudantium velit sunt quaerat quasi quod qui. Alias voluptatum exercitationem consequuntur atque quis nihil ut aperiam laboriosam necessitatibus, facilis dolores veniam eaque tempora fuga rerum harum suscipit distinctio porro? Magnam totam odit porro deleniti eos voluptatem! Ipsam vero a culpa neque autem, doloribus sunt nemo. Accusamus itaque dignissimos quae at quia saepe voluptatem, quis aliquam modi. Omnis nostrum repellendus assumenda accusantium.</p>
+                <li class="flex aling col">
+                    <strong>Colum</strong>
+                    <div> 1 </div>
+                    <div> 2 </div>
+                    <div> 3 </div>
+                    <div> 4 </div>
+                    <div> 5 </div>
+                </li>
+                <li class="flex aling reverse">
+                    <strong>Row-Reverse</strong>
+                    <div> 1 </div>
+                    <div> 2 </div>
+                    <div> 3 </div>
+                    <div> 4 </div>
+                    <div> 5 </div>
+                </li>
+                <li class="flex aling col-reverse">
+                    <strong>Colum-Reverse</strong>
+                    <div> 1 </div>
+                    <div> 2 </div>
+                    <div> 3 </div>
+                    <div> 4 </div>
+                    <div> 5 </div>
+                </li>
+            </section>
         </article>
         <article>
             <section></section>
@@ -47,7 +194,58 @@
             <section></section>
         </article>
     </main>
-    <footer id="footer"></footer>
+    <footer id="footer"><!-- Pie / Descenlace -->  
+        <div class="social">
+            <a href="https://facebook.com" target="_blank">F</a>
+            <a href="https://twitter.com" target="_blank">T</a>
+            <a href="https://instagram.com" target="_blank">I</a>
+            <a href="https://api.whatsapp.com/send?phone=123456789" target="_blank">W</a>
+        </div>
+        <!-- form#contact>h2{Contactanos}+(label+input[required])*3+label+textarea+button{Enviar Consulta} -->
+        <form action="" id="contact">
+            <h2>Contactanos</h2>
+            <label for="contactName">Nombre</label>
+            <input
+                id="contactName"
+                name="contactName" 
+                placeholder="Ingrese su Nombre"
+                pattern="[a-z A-Z]{2,50}"
+                title="Escriba su nombre sin numeros ni simbolos, el mismo debe poseer entre 2 y 50 caracteres"
+                type="text" 
+                required="required"/>
+            <label for="contactEmail">Correo</label>
+            <input
+                id="contactEmail"
+                name="contactEmail" 
+                placeholder="Ingrese su Correo"
+                type="email" 
+                required="required"/>
+            <label for="contactPhone">Telefono</label>
+            <input
+                id="contactPhone"
+                name="contactPhone" 
+                placeholder="Ingrese su Telefono"
+                pattern="[0-9]{6-20}"
+                title="Escriba su numero sin guiones ni espacios, este campo debe contener entre 6 y 20 digitos"
+                type="tel" 
+                required="required"/>
+            <label for="contactConsult">Consulta</label>
+            <textarea 
+                id="contactConsult" 
+                name="contactConsult"  
+                placeholder="Ingrese su Consulta"
+                minlength="10" 
+                maxlength="200"
+                required>
+            </textarea>
+            <button>Enviar Consulta</button>
+        </form>
+        <p>
+            &copy; Todos los derechos reservados
+            <a href="mailto:rjruizsf@gmail.com">Rodrigo Ruiz</a>
+            &amp; compañia
+        </p>
+    </footer>
     <script src="js/scripts.js"></script>
 
 </body>

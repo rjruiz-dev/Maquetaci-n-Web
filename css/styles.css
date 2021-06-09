@@ -4,8 +4,7 @@
 
 /* Todos los elementos */
 *{
-    box-sizing: ;
-
+    box-sizing: border-box;
     /* 
         CONTENT-BOX
             width + padding + border = final-width
@@ -24,3 +23,180 @@ html {
     scroll-behavior: smooth;
    
 }
+
+/* .header{
+    color:#ccc;
+    background-color: #012;
+    width: 300px;
+    padding: 50px;
+    border: 2px solid #248;
+} */
+
+/* Encabezado  y Pie de Pagina */
+#header, #footer{
+    color: #ccc;
+    background-color: #012;
+    text-transform: uppercase;
+    padding: 20px;
+
+    /* 
+    Selectores
+        Etiquetas (header)
+            generales header {color:darkblue;}
+            anidados header h1{color:blue;}
+        Clase (.header)
+            generales .header {color:yellow;}
+            anidados .header h1 {color:orange;}
+        Id (#header)
+            generales #header {color:tomato;}
+            anidados #header h1{color:darkred;} */
+
+    /* relga especifica reemplaza regla general */
+    /* header {background-color:darkblue;}
+        header h1{background-color:blue;}
+        .header {background-color:yellow;}
+        .header h1 {background-color:orange;}
+        #header {background-color:tomato;}
+        #header h1{background-color:darkred;} 
+    */
+
+    /* background */
+    background-image: url(../assets/img/background_2.jpg);
+    background-size: cover; /*x y*/
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+#footer{
+    background-position: bottom center;
+}
+
+#header a,
+#footer a{
+    color:#ddd;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Barra de Navegacion */
+nav{
+    /* rgba se sobrepone encima */
+    background-color: rgba(30,90,200,.2); /*alpha = trasparencia*/
+    /* 
+        Sintesis Adhitiva (RR GG BB)
+            Rojo:       255  0    0;    = ff0000
+            Cian:       0    255  255;  = 00ffff
+            Verde:      0    255  0;    = 00ff00
+            Magenta:    255  0    255;  = ff00ff
+            Azul:       0    0    255;  = 0000ff
+            Amarillo:   255  255  0;    = ffff00
+            Negro:      0    0    0;    = 000000
+            Blanco:     255  255  255;  = ffffff
+    */
+}
+.menu{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.menu li{
+    display: inline-block;
+    padding: 1em; /*ancho de la M en el elemento Padre = 16px*/
+}
+
+.menu li:hover{
+    background-color: rgba(30,90,200,.3);
+}
+/* Contenido Principal */
+
+main {    
+    background-image: url(../assets/img/logo_1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+.main, article,section{
+    padding: 1em;
+    background-color: rgba(230,230,230,.7);
+}
+
+.flex{
+    border: 2px solid #333;
+    padding: .2em;
+    /*FlexBox*/
+        display: flex;
+        /*Determina si el contenido se apila*/
+        flex-wrap: wrap;
+        /*
+        Determina el inicio de la distribucion 
+        flex-start/flex-end/flex-center
+        */
+        justify-content: space-between;
+}
+
+.flex div{
+    width: 80px;
+    line-height: 80px;
+    padding: 0 1em;
+    border: 2px dotted;
+    color: #ccc;
+    background-color: #248 ;
+}
+
+.aling{
+    height: 240px;
+    /*FlexBox*/
+        /* flex-direction: row-reverse; */
+        /* align-items: baseline;    */
+        align-items: center;   
+}
+
+.self{ align-self: flex-end; }
+.col{ flex-direction: column; }
+.reverse{ flex-direction: row-reverse; }
+.col-reverse{ flex-direction: column-reverse; }
+
+/* Formulario de Contacto */
+
+#contact {
+    /* overflow: hidden; */
+    /* border: 4px dashed white; */
+    /* width: 450px; */
+
+    display: flex;
+    flex-direction: column;
+    min-width: 360px;
+    max-width: 720px;
+    margin:auto;
+}
+#contact input,
+#contact textarea{
+    /* width: 100%; */
+    outline: none;
+    padding: .5em 1em; /*top right bottom left */
+}
+
+#contact textarea{
+    resize: none;
+    height: 80px;
+}
+
+#contact button{
+    /* float: right; */
+    cursor: pointer;
+    border: 2px solid;
+    padding: 0.5em;
+    text-transform: uppercase;
+    font-size: 1em;
+    color:#ccc;
+    background-color: rgb(34,68,136,.5);
+    
+}
+
+#contact button:hover{
+    background-color: rgba(68,136,255,.2);
+}
+
+
