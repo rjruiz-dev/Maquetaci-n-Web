@@ -109,6 +109,40 @@ nav{
 .menu li:hover{
     background-color: rgba(30,90,200,.3);
 }
+
+/* Redes Sociales */
+    .social {
+        background-color: rgba(255,255,255,.5); 
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        border-radius: .5em;
+        /* border: 1px solid white; */
+        padding: .5rem;
+        max-width: 280px;
+    }
+    .social a {
+        width: 64px;
+        height: 64px;        
+        border-radius: .2em;
+        /* border:1px dashed#ccc; */
+           
+            background-size: 32px;
+            background-repeat: no-repeat;
+            background-position: center;
+
+    }
+
+    .social a:first-child{ background-image: url(../assets/img/facebook.png);}
+
+    .social a:nth-child(2){ background-image: url(../assets/img/facebook.png);}
+
+    .social a:nth-child(3){ background-image: url(../assets/img/facebook.png);}
+
+    .social a:hover{
+        background-size: 54px;
+        /* background-color: #fff; */
+    }
 /* Contenido Principal */
 
 main {    
@@ -121,42 +155,68 @@ main {
     padding: 1em;
     background-color: rgba(230,230,230,.7);
 }
-
-.flex{
-    border: 2px solid #333;
-    padding: .2em;
-    /*FlexBox*/
-        display: flex;
-        /*Determina si el contenido se apila*/
-        flex-wrap: wrap;
-        /*
-        Determina el inicio de la distribucion 
-        flex-start/flex-end/flex-center
-        */
-        justify-content: space-between;
+article{
+    margin: auto;
+    max-width: 1440px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+article header{
+    width: 100%;
+    /* max-width: 720px; */
+}
+section{
+    width: 50%;
+    min-width: 360px;
+    max-width: 720px;
 }
 
-.flex div{
-    width: 80px;
-    line-height: 80px;
-    padding: 0 1em;
-    border: 2px dotted;
-    color: #ccc;
-    background-color: #248 ;
+section p::first-line{
+    color:#124;
+    font-weight: bold;
 }
-
-.aling{
-    height: 240px;
-    /*FlexBox*/
-        /* flex-direction: row-reverse; */
-        /* align-items: baseline;    */
-        align-items: center;   
+section p::first-letter{
+    font-size: 4em;
+    float: left;
+    margin-right: .2em;
 }
+/* Flexbox */
+    .flex{
+        border: 2px solid #333;
+        padding: .2em;
+    
+            display: flex;
+            /*Determina si el contenido se apila*/
+            flex-wrap: wrap;
+            /*
+            Determina el inicio de la distribucion 
+            flex-start/flex-end/flex-center
+            */
+            justify-content: space-between;
+    }
 
-.self{ align-self: flex-end; }
-.col{ flex-direction: column; }
-.reverse{ flex-direction: row-reverse; }
-.col-reverse{ flex-direction: column-reverse; }
+    .flex div{
+        width: 80px;
+        line-height: 80px;
+        padding: 0 1em;
+        border: 2px dotted;
+        color: #ccc;
+        background-color: #248 ;
+    }
+
+    .aling{
+        height: 240px;
+        
+            /* flex-direction: row-reverse; */
+            /* align-items: baseline;    */
+            align-items: center;   
+    }
+
+    .self{ align-self: flex-end; }
+    .col{ flex-direction: column; }
+    .reverse{ flex-direction: row-reverse; }
+    .col-reverse{ flex-direction: column-reverse; }
 
 /* Formulario de Contacto */
 
@@ -171,18 +231,30 @@ main {
     max-width: 720px;
     margin:auto;
 }
+#contact label{
+    height: 0;
+    margin-top: .5em;
+}
+
 #contact input,
 #contact textarea{
     /* width: 100%; */
     outline: none;
+    border: 4px solid #fff ;
+    border-radius: .3em;
     padding: .5em 1em; /*top right bottom left */
+    font-size: 1em;
 }
 
 #contact textarea{
     resize: none;
     height: 80px;
 }
-
+#contact input:focus, 
+#contact textarea:focus{
+    border:4px solid rgba(18,36,136,.5);
+    box-shadow: 0 0 .5em #ccc;
+}
 #contact button{
     /* float: right; */
     cursor: pointer;
@@ -199,4 +271,30 @@ main {
     background-color: rgba(68,136,255,.2);
 }
 
+/* 
+    Pseudo-class: 
+        Instancia de un elemento, caracteristica o estado al que se hace referencia
+        TODOS
+        :hover          (pasar el mouse por encima)
+        :first-child    (primer hijo del elemento contenedor)
+        :last-child     (ultimo hijo del elemento contenedor)
+        :first-of-type  (primero de su tipo)
+
+        HIPERVINCULOS
+        :link    (hipervinculo sin visitar)
+        :visited (hipervinculo visitado)
+        :active  (hipervinculo siendo presionado)
+
+        CAMPOS DEL FORMULARIO
+        :focus   (foco sobre campo de formulario)
+
+    Pseudo-element:
+        Una parte del contenido del elemento al qur se hace referencia
+        TODOS
+            ::first-letter (primera letra del contenido)
+            ::first-line (primera linea del contenido)
+            ::before (inserta contenido antes del contenido del elemento)
+            ::after  (inserta contenido despues del contenido del elemento)
+    
+*/
 
