@@ -33,11 +33,11 @@
     <main><!-- Contenido Principal / Nudo -->  
         <article><!-- Contenido Independiente / Articulo -->  
             <header class="header">
-                <h1>Clase 1: Introduccion Maquetacion</h1>
+                <h1>Introduccion Maquetacion</h1>
             </header>
             <section><!-- Contenido Contextualizado / Seccion -->
                 <header >
-                    <h1>Tema 1: Elementos Semanticos</h1>
+                    <h1>Elementos Semanticos</h1>
                 </header>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eos ab, earum iusto suscipit voluptas asperiores quod incidunt debitis fuga quidem quisquam autem distinctio eaque harum tempora molestias hic a?
@@ -58,7 +58,7 @@
             </section>  
             <section>
                 <header>
-                    <h1>Tema 2: Jerarquia de Selectores</h1>
+                    <h1>Jerarquia de Selectores</h1>
                 </header>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, ut laudantium. Quia incidunt beatae delectus, ipsum adipisci qui asperiores veritatis in nemo odio perferendis excepturi eum magnam, quasi, error provident.
@@ -94,7 +94,7 @@
             </header>
             <section>
                 <header>
-                    <h1>Tema 1: Distribucion (Justify-Content)</h1>
+                    <h1>Distribucion (Justify-Content)</h1>
                 </header>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur placeat cum, labore id esse vel! Minima, quia obcaecati nemo nobis, laborum, voluptate cupiditate magnam libero ullam at totam? Aut itaque id nobis natus facere earum numquam nesciunt doloribus eaque. Laudantium velit sunt quaerat quasi quod qui. Alias voluptatum exercitationem consequuntur atque quis nihil ut aperiam laboriosam necessitatibus, facilis dolores veniam eaque tempora fuga rerum harum suscipit distinctio porro? Magnam totam odit porro deleniti eos voluptatem! Ipsam vero a culpa neque autem, doloribus sunt nemo. Accusamus itaque dignissimos quae at quia saepe voluptatem, quis aliquam modi. Omnis nostrum repellendus assumenda accusantium.</p>
                 <div class="flex">
@@ -129,7 +129,7 @@
             </section>
             <section>
                 <header>
-                    <h1>Tema 2: Organizacion (Aling-Item)</h1>
+                    <h1>Organizacion (Aling-Item)</h1>
                 </header>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur placeat cum, labore id esse vel! Minima, quia obcaecati nemo nobis, laborum, voluptate cupiditate magnam libero ullam at totam? Aut itaque id nobis natus facere earum numquam nesciunt doloribus eaque. Laudantium velit sunt quaerat quasi quod qui. Alias voluptatum exercitationem consequuntur atque quis nihil ut aperiam laboriosam necessitatibus, facilis dolores veniam eaque tempora fuga rerum harum suscipit distinctio porro? Magnam totam odit porro deleniti eos voluptatem! Ipsam vero a culpa neque autem, doloribus sunt nemo. Accusamus itaque dignissimos quae at quia saepe voluptatem, quis aliquam modi. Omnis nostrum repellendus assumenda accusantium.</p>
                 <div class="flex aling">
@@ -159,7 +159,7 @@
             </section>
             <section>
                 <header>
-                    <h1>Tema 3: Direccion (Flex-Direction)</h1>
+                    <h1>Direccion (Flex-Direction)</h1>
                 </header>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur placeat cum, labore id esse vel! Minima, quia obcaecati nemo nobis, laborum, voluptate cupiditate magnam libero ullam at totam? Aut itaque id nobis natus facere earum numquam nesciunt doloribus eaque. Laudantium velit sunt quaerat quasi quod qui. Alias voluptatum exercitationem consequuntur atque quis nihil ut aperiam laboriosam necessitatibus, facilis dolores veniam eaque tempora fuga rerum harum suscipit distinctio porro? Magnam totam odit porro deleniti eos voluptatem! Ipsam vero a culpa neque autem, doloribus sunt nemo. Accusamus itaque dignissimos quae at quia saepe voluptatem, quis aliquam modi. Omnis nostrum repellendus assumenda accusantium.</p>
                 <li class="flex aling col">
@@ -189,17 +189,135 @@
             </section>
         </article>
         <article>
-            <section><a href="algo.html">Hello World</a></section>
-            <section></section>
-            <section></section>
+            <header class="header">
+                <h1>Introduccion a CSS-Grid</h1>
+            </header>
+            <section>
+                <header>
+                    <h1>Sistema de Grillas</h1>
+                </header>                
+                <div class="grid">
+                    <div> celda 1</div>
+                    <div> celda 2</div>
+                    <div> celda 3</div>
+                    <div> celda 4</div>
+                    <div> celda 5</div>
+                </div>    
+                <ul>
+                    <li>
+                        <strong>grid-template-columns: </strong> Permite crear las columnas para organizar el contenido,
+                        debemos indicar mediante tamaños o el valor auto la cantidad.
+                    </li>
+                    <li>
+                        <strong>grid-template-rows: </strong> Permite crear y asignar el tamaño de las filas,
+                        a diferencia de <em>columns</em> NO define la cantidad maxima de las mismas.
+                    </li>
+                    <li>
+                        <strong>gap: Permite definir el epaciado entre celdas, aplicando a filas y columnas respectivamente,
+                            aunque tambien exiten los atributos <em> row-gap y column-gap.</em>
+                        </strong>
+                    </li>
+                </ul>            
+            </section>
+            <section>
+                <header>
+                    <h1>Organizacion y Distribucion</h1>
+                </header>
+                <div class="grid-align">
+                    <div> celda 1</div>
+                    <div> celda 2</div>
+                    <div> celda 3</div>
+                    <div> celda 4</div>
+                    <div> celda 5</div>
+                </div> 
+                <ul>
+                    <li>
+                        <strong>Justify-Content: </strong> Permite distribuir el contenido
+                        de manera horizontal, admite los mismos valores que Flexbox.
+                    </li>
+                    <li>
+                        <strong>Align-content: </strong> Permite organizar el contenido de la grilla de manera
+                         vertical. Admite los mismos valores que el atributo <em>Aling-Item de Flexbox.</em> 
+                    </li>
+                </ul> 
+            </section>
+            <section>
+                <header>
+                    <h1>Plantilla de Grilla</h1>
+                </header>
+                <div class="grid template">
+                    <div>Celda 1</div>
+                    <div>Celda 2</div>
+                    <div>Celda 3</div>
+                    <div>Celda 4</div>
+                    <div>Celda 5</div>
+                </div>
+                <ul>
+                    <li>
+                        <strong>grid-template-areas: </strong> Permite definir mediante nombres de area 
+                        los espacios ocupados por las diferentes celdas, por defecto el tamaño es automatico,
+                        pero si existe un <em>grid-template-rows / grid-template-columns</em> afectara al diseño de 
+                        las mismas.
+                    </li>
+                    <li>
+                        <strong>grid-area: </strong> Asigna el nombre de area a la etiqueta donde se aplique
+                        dicho atributo. 
+                    </li>
+                </ul>
+            </section>
+        </article>
+        <article class="before">
+            <header class="header">
+                <h1></h1>    
+            </header>
+            <p></p>
+            <section>
+                <header>
+                    <h1></h1>
+                </header>
+                <p></p>
+                <ul>
+                    <li>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <header>
+                    <h1></h1>
+                </header>
+                <p></p>
+                <div class="sprite">                  
+                    <a href=""></a>
+                    <a href=""></a>
+                    <a href=""></a>
+                    <a href=""></a>                  
+                </div>
+                <img src="assets/img/descarga.jpg" alt="">
+            </section>
         </article>
     </main>
     <footer id="footer"><!-- Pie / Descenlace -->  
         <div class="social">
-            <a href="https://facebook.com" target="_blank">F</a>
-            <a href="https://twitter.com" target="_blank">T</a>
-            <a href="https://instagram.com" target="_blank">I</a>
-            <a href="https://api.whatsapp.com/send?phone=123456789" target="_blank">W</a>
+            <a href="https://facebook.com" target="_blank"></a>
+            <a href="https://twitter.com" target="_blank"></a>
+            <a href="https://instagram.com" target="_blank"></a>
+            <a href="https://api.whatsapp.com/send?phone=123456789" target="_blank"></a>
         </div>
         <!-- form#contact>h2{Contactanos}+(label+input[required])*3+label+textarea+button{Enviar Consulta} -->
         <form action="" id="contact">
